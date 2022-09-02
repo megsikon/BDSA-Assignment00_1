@@ -62,7 +62,7 @@ public class LeapYearTest
 
       //act
       var isLeap = Program.isLeapYear(leapYear);
-      var isLeapStr = Program.isLeapYearStr(isLeap);
+      var isLeapStr = Program.isLeapYearStr(isLeap, leapYear);
 
       //assert
       Assert.Equal("yay", isLeapStr);
@@ -76,7 +76,7 @@ public class LeapYearTest
 
       //act
       var isLeap = Program.isLeapYear(leapYear);
-      var isLeapStr = Program.isLeapYearStr(isLeap);
+      var isLeapStr = Program.isLeapYearStr(isLeap, leapYear);
 
       //assert
       Assert.Equal("nay", isLeapStr);
@@ -90,7 +90,7 @@ public class LeapYearTest
 
       //act
       var isLeap = Program.isLeapYear(leapYear);
-      var isLeapStr = Program.isLeapYearStr(isLeap);
+      var isLeapStr = Program.isLeapYearStr(isLeap, leapYear);
 
       //assert
       Assert.Equal("yay", isLeapStr);
@@ -104,7 +104,7 @@ public class LeapYearTest
 
       //act
       var isLeap = Program.isLeapYear(leapYear);
-      var isLeapStr = Program.isLeapYearStr(isLeap);
+      var isLeapStr = Program.isLeapYearStr(isLeap, leapYear);
 
       //assert
       Assert.Equal("nay", isLeapStr);

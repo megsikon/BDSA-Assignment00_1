@@ -4,17 +4,29 @@ public class Program
 {
     //int leapYear;
     static void Main(string[] args) {
-        Console.Write("Enter possible leap year: ");
-        string yearStr = Console.ReadLine();
-        int year = Convert.ToInt32(yearStr);
-        Console.WriteLine(isLeapYearStr(isLeapYear(year)));
+      int year;
+      Console.Write("Enter possible leap year: ");
+      string yearStr = Console.ReadLine();
+      try
+      {
+        year = Convert.ToInt32(yearStr);
+        Console.WriteLine(isLeapYearStr(isLeapYear(year), year));
+      }
+      catch (FormatException)
+      {
+        throw new FormatException(yearStr + " is not an integer");
+      }
     }
 
-    public static string isLeapYearStr(bool isLeap) {
-      if (isLeap) {
-        return "yay";
+    public static string isLeapYearStr(bool isLeap, int year) {
+      if (year >= 1582) {
+        if (isLeap) {
+          return "yay";
+        } else {
+          return "nay";
+        }
       } else {
-        return "nay";
+        return "can only test years from 1582 to today";
       }
     }
     public static bool isLeapYear(int year)

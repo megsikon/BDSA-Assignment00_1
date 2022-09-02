@@ -1,10 +1,17 @@
 namespace LeapYear.Tests;
 
-public class UnitTest1
+public class LeapYearTest
 {
     [Fact]
-    public void Test1()
+    public void _2004isLeapYear()
     {
+      //arrange
+      var sut = new LeapYear();
+      int leapYear = 2004;
 
+      //act
+      var res = sut.isLeapYear(leapYear);
+
+      //assert
     }
 }

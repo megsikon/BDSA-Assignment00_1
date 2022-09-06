@@ -1,5 +1,9 @@
 @startuml
 
-[*] --> Alice
+class Program {
+  {method} Main()
+  {method} isLeapYearStr(bool, int)
+  {method} isLeapYear(int)
+}
 
 @enduml

@@ -2,11 +2,10 @@
 
 public class Program
 {
-    //int leapYear;
     static void Main(string[] args) {
       int year;
       Console.Write("Enter possible leap year: ");
-      string yearStr = Console.ReadLine();
+      string? yearStr = Console.ReadLine();
       try
       {
         year = Convert.ToInt32(yearStr);

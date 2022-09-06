@@ -1,9 +1,9 @@
-@startuml
+@startuml classDiagram
 
 class Program {
   {method} Main()
-  {method} isLeapYearStr(bool, int)
-  {method} isLeapYear(int)
+  isLeapYearStr(bool, int)
+  isLeapYear(int)
 }
 
 @enduml
